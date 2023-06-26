@@ -24,8 +24,8 @@ $(function () {
     });
 
     $('.main_slide').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5100,
         speed: 1000,
         pauseOnHover: false,
         fade: true,
