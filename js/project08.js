@@ -47,24 +47,5 @@ $(function () {
     })
 
 
-    $('.protect_slide').on('init afterChange', function (e, s, c) {
-        console.log(c);
-        $('.main_protect .itm').eq(c).addClass('on')
-            .siblings().removeClass('on')
-
-    })
-    $('.protect_slide').slick({
-        centerMode: true,
-        variableWidth: true,
-        arrows: false,
-        dots: true,
-    });
-
-    $('.main_protect .tab_arrows .left').on('click', function () {
-        $('.protect_slide').slick('slickPrev')
-    });
-    $('.main_protect .tab_arrows .right').on('click', function () {
-        $('.protect_slide').slick('slickNext')
-    });
 
 })
