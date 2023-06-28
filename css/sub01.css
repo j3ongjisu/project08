@@ -1,0 +1,246 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+/*top_bar*/
+.top_bar {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.top_bar .customer {
+    display: flex;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 30px;
+    justify-content: space-between;
+}
+
+.top_bar .customer li {
+    padding: 0 10px;
+}
+
+.top_bar .lf_customer {
+    display: flex;
+}
+
+.top_bar .lf_customer li {
+    border-left: 1px solid #ddd;
+}
+
+.top_bar .lf_customer li:hover {
+    color: #7AA61B;
+}
+
+.top_bar .ri_customer li {
+    border-right: 1px solid #ddd;
+}
+
+.top_bar .ri_customer li:hover {
+    color: #7AA61B;
+}
+
+.top_bar .ri_customer {
+    display: flex;
+}
+
+/*메뉴*/
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.header.on {
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header .header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    transition: 0.5s;
+}
+
+.header.on .header_wrap {
+    height: 80px;
+}
+
+.header h1 {}
+
+.header h1 img {
+    display: inline-block;
+    margin: 0 0 5px 0;
+    height: 100%;
+    width: 200px;
+}
+
+/*메뉴 리스트*/
+.gnb {}
+
+
+.gnb .main_menu {
+    display: flex;
+}
+
+.gnb .main_menu>li {
+    position: relative;
+    padding: 0 30px;
+}
+
+.gnb .main_menu a {
+    display: block;
+    color: #444;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    line-height: 120px;
+    transition: 0.5s;
+}
+
+.gnb .main_menu a:hover {
+    color: #7AA61B;
+}
+
+.header.on .gnb .main_menu a {
+    color: #666;
+}
+
+.header.on .gnb .main_menu a:hover {
+    color: #7AA61B;
+}
+
+/* 메뉴 - 로그인 창 */
+.login_area .member {
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.main_introduce {
+    padding: 100px 0;
+    height: 100vh;
+}
+
+.main_introduce .introduce_bg_box {
+    position: relative;
+    background: url(../images/bg01.jpg) no-repeat center center/cover;
+    height: 400px;
+}
+
+.main_introduce .introduce_bg_box .introduce_txt_box {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    top: 0;
+    left: 0;
+    transform: translate(60%, 65%);
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.main_introduce .introduce_bg_box .introduce_txt_box h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #7AA61B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- footer ----------- */
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 50px;
+    background: #fff;
+    color: #444;
+}
+
+.footer .top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+
+.footer .top strong {
+    font-weight: 800;
+    color: #7AA61B;
+}
+
+.footer .top .left {
+    display: flex;
+    gap: 31px;
+    line-height: 28px;
+    align-items: center;
+}
+
+.footer .top .left li {
+    position: relative;
+}
+
+.footer .top .left li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+}
+
+.footer .top .left a {
+    display: block;
+    font-size: 15px;
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.footer .bottom .author ul {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    line-height: 20px;
+}
+
+.footer .bottom .author ul span {
+    font-size: 0;
+    padding: 0 8px;
+}
+
+.footer .bottom .author ul span::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+}
+
+.footer .bottom span {
+    color: #444;
+    font-size: 12px;
+    font-weight: 400;
+}

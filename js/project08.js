@@ -24,8 +24,8 @@ $(function () {
     });
 
     $('.main_slide').slick({
-        // autoplay: true,
-        // autoplaySpeed: 5100,
+        autoplay: true,
+        autoplaySpeed: 5100,
         speed: 1000,
         pauseOnHover: false,
         fade: true,
@@ -47,5 +47,45 @@ $(function () {
     })
 
 
+    // section2 슬라이드 돌리기
+    $('.product_slide').slick({
+        slidesToShow: 3,
+        asNavFor: ".pic_slide",
+        focusOnSelect: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
 
+
+    // .main_paccel_out에 화살표 버튼 눌러서 슬라이드 돌아가게 하기
+    $('.main_paccel_out .arrows .left').on('click', function () {
+        $('.paccel_out_slide').slick('slickPrev');
+    });
+    $('.main_paccel_out .arrows .right').on('click', function () {
+        $('.paccel_out_slide').slick('slickNext');
+    });
+
+
+    $('.paccel_out_slide').slick({
+        slidesToShow: 3,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
 })
