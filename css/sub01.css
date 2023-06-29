@@ -127,32 +127,77 @@
     cursor: pointer;
 }
 
-.main_introduce {
-    padding: 100px 0;
+.sub_introduce {
+    /* padding: 0 0 200px 0; */
+    padding: 0 0 200px 0;
     height: 100vh;
 }
 
-.main_introduce .introduce_bg_box {
+.sub_introduce .introduce_bg_box {
     position: relative;
-    background: url(../images/bg01.jpg) no-repeat center center/cover;
+    background: url(../images/bg01.jpg) no-repeat left center/cover;
     height: 400px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 55px;
+    text-align: center;
 }
 
-.main_introduce .introduce_bg_box .introduce_txt_box {
+.sub_introduce .introduce_bg_box .box_txt {
     position: absolute;
+    top: 40%;
+    left: 42%;
+    transform: translate(0%, 0%);
+}
+
+.sub_introduce .introduce_bg_box .box_txt::before {
+    position: absolute;
+    content: "";
+    top: -20%;
+    left: 40%;
+    transform: translate(0%, 0%);
+    width: 50px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.sub_introduce .introduce_bg_box .introduce_txt_box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 800px;
-    height: 450px;
+    height: 470px;
     top: 0;
     left: 0;
-    transform: translate(60%, 65%);
+    transform: translate(60%, 62%);
     background: #fff;
     border: 1px solid #ddd;
+    border-radius: 0 50px 0 50px;
+    text-align: center;
+    justify-content: center;
 }
 
-.main_introduce .introduce_bg_box .introduce_txt_box h2 {
-    font-size: 35px;
+.sub_introduce .introduce_bg_box .introduce_txt_box h2 {
+    font-size: 40px;
     font-weight: 500;
     color: #7AA61B;
+    margin: 0 0 30px 0;
+
+}
+
+.sub_introduce .introduce_bg_box .introduce_txt_box strong {
+    color: #444;
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.sub_introduce .introduce_bg_box .introduce_txt_box p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    line-height: 1.6;
 }
 
 
