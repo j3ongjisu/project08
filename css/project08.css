@@ -169,7 +169,7 @@
 .main_visual .itm01::before {
     content: "";
     position: absolute;
-    width: 700px;
+    width: 770px;
     height: 640px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
@@ -183,7 +183,7 @@
 .main_visual .itm02::before {
     content: "";
     position: absolute;
-    width: 700px;
+    width: 770px;
     height: 640px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
@@ -197,7 +197,7 @@
 .main_visual .itm03::before {
     content: "";
     position: absolute;
-    width: 700px;
+    width: 770px;
     height: 640px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
@@ -358,7 +358,7 @@
 
 .main_visual .arrows {
     position: absolute;
-    inset: 64.5% auto auto 22.5%;
+    inset: 64.5% auto auto 24.5%;
 }
 
 .main_visual .arrows i {
@@ -499,7 +499,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    transform: translate(-90%, 32.5%);
+    transform: translate(-130%, 32.5%);
     width: 100px;
     height: 500px;
     align-items: center;
@@ -707,6 +707,10 @@
     position: relative;
 }
 
+.footer .top .left li:hover {
+    color: #7AA61B;
+}
+
 .footer .top .left li~li::before {
     content: "";
     position: absolute;
@@ -767,7 +771,7 @@
     bottom: 122px;
 
     right: 145px;
-    transform: translate(70%, 70%);
+    transform: translate(-26%, 70%);
     z-index: 999;
     opacity: 0;
     visibility: hidden;

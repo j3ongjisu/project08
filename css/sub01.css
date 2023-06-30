@@ -170,7 +170,7 @@
     height: 470px;
     top: 0;
     left: 0;
-    transform: translate(60%, 61%);
+    transform: translate(69%, 61%);
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 0 50px 0 50px;
@@ -243,6 +243,10 @@
 
 .footer .top .left li {
     position: relative;
+}
+
+.footer .top .left li:hover {
+    color: #7AA61B;
 }
 
 .footer .top .left li~li::before {
