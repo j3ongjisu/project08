@@ -754,6 +754,13 @@
     font-weight: 400;
 }
 
+.fl {
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
 /*to_top 버튼*/
 .to_top {
     position: fixed;
