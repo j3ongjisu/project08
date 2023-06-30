@@ -119,6 +119,8 @@
     color: #7AA61B;
 }
 
+
+
 /* 메뉴 - 로그인 창 */
 .login_area .member {
     display: flex;
@@ -168,7 +170,7 @@
     height: 470px;
     top: 0;
     left: 0;
-    transform: translate(60%, 62%);
+    transform: translate(60%, 61%);
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 0 50px 0 50px;

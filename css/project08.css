@@ -358,7 +358,7 @@
 
 .main_visual .arrows {
     position: absolute;
-    inset: 64.5% auto auto 23.5%;
+    inset: 64.5% auto auto 22.5%;
 }
 
 .main_visual .arrows i {
@@ -757,7 +757,8 @@
 /*to_top 버튼*/
 .to_top {
     position: fixed;
-    bottom: 0px;
+    bottom: 122px;
+
     right: 145px;
     transform: translate(70%, 70%);
     z-index: 999;
@@ -767,7 +768,6 @@
 }
 
 .to_top.on {
-    bottom: 122px;
     visibility: visible;
     opacity: 1;
 }
