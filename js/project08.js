@@ -24,7 +24,7 @@ $(function () {
     });
 
     $('.main_slide').slick({
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5100,
         speed: 1000,
         pauseOnHover: false,
@@ -87,6 +87,11 @@ $(function () {
                 }
             }
         ]
+    });
+
+    $('.family_link span').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
     });
 
     //to_top
