@@ -7,6 +7,12 @@ $(function () {
             : $('.header').removeClass('on');
     });
 
+    $('.mobile_btn').on('click', function () {
+        $(this).toggleClass('on');
+        $('.gnb').toggleClass('on');
+        $('.h1').toggleClass('on');
+    });
+
 
     $('.main_slide').on('init afterChange', function (e, s, c) {
         const current = $('.main_slide .slick-current');
