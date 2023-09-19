@@ -60,7 +60,7 @@
 
 .header.on {
     background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header .header_wrap {
@@ -414,6 +414,10 @@
     font-weight: 500;
 }
 
+.main_find .find_tit i {
+    vertical-align: top;
+}
+
 .main_find .find_tit a:hover {
     color: #7AA61B;
 
@@ -476,10 +480,14 @@
     opacity: 0;
 }
 
-.main_find .find_left .left_img_box figure a {
+.main_find .find_left .left_img_box figure .link a {
     margin: 0 0 5px 0;
     font-size: 14px;
     font-weight: 300;
+}
+
+.main_find .find_left .left_img_box figure .link i {
+    font-size: 12px;
 }
 
 .main_find .find_left .left_img_box figure a:hover {
@@ -604,7 +612,6 @@
 
 .main_paccel_out .paccel_out_slide {
     margin: 0 -15px;
-
 }
 
 .main_paccel_out .paccel_out_slide figure {
@@ -714,7 +721,7 @@
     top: 2px;
     margin: 0 -10px;
     width: 1px;
-    height: 10px;
+    height: 9px;
     background: #ccc;
 }
 
@@ -739,7 +746,7 @@
 
 .family_link span {
     display: block;
-    padding: 0 15px;
+    padding: 0 25px 0 15px;
     width: 150px;
     font-size: 16px;
     font-weight: 500;
